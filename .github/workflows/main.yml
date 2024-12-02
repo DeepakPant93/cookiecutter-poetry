@@ -51,6 +51,10 @@ jobs:
 
             - name: Upload coverage reports to Codecov with GitHub Action on Python 3.11
               uses: codecov/codecov-action@v4
+              with:
+                  token: ${{ secrets.CODECOV_TOKEN }} # Add this in GitHub secrets
+                  files: ./coverage.xml
+                  fail_ci_if_error: true
               if: ${{ matrix.python-version == '3.11' }}
 
     check-docs:
