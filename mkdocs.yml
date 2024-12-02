@@ -1,0 +1,54 @@
+site_name: cookiecutter-poetry
+repo_url: https://github.com/DeepakPant93/cookiecutter-poetry
+site_url: https://DeepakPant93.github.io/cookiecutter-poetry
+site_description: A Demo Project for Cookiecutter Poetry
+site_author: Deepak Pant
+edit_uri: edit/main/docs/
+repo_name: DeepakPant93/cookiecutter-poetry
+copyright: Maintained by <a href="https://DeepakPant93.com">Florian</a>.
+
+nav:
+    - Home: index.md
+    - Modules: modules.md
+plugins:
+    - search
+    - mkdocstrings:
+          handlers:
+              python:
+                  setup_commands:
+                      - import sys
+                      - sys.path.append('../')
+theme:
+    name: material
+    feature:
+        tabs: true
+    palette:
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: white
+          accent: deep orange
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: black
+          accent: deep orange
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
+    icon:
+        repo: fontawesome/brands/github
+
+extra:
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/DeepakPant93/cookiecutter-poetry
+        - icon: fontawesome/brands/python
+          link: https://pypi.org/project/cookiecutter-poetry
+
+markdown_extensions:
+    - toc:
+          permalink: true
+    - pymdownx.arithmatex:
+          generic: true
