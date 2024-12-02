@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "cookiecutter_poetry"
+name = "cookiecutter_poetry_deepak"
 version = "0.0.1"
 description = "A Demo Project for Cookiecutter Poetry"
 authors = ["Deepak Pant <deepak.93p@gmail.com>"]
